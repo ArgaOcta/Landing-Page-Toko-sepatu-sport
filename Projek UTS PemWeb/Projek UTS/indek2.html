@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="../Logo/Preview (5).png" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+    <script type="text/javascript" src="side.js" defer></script>
+    <title>777 SPORT</title>
+</head>
+<body>
+  <style>
+    .landing{
+        background-color: black;
+        margin-bottom: 20px;
+        height: 1000px;
+    }
+    .menu{
+        display: flex;
+        margin-left: 680px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 100px;
+        font-weight: 100;
+        & h6{
+            margin: 20px;
+            font-size: 18px;
+        }
+    }
+    .gamb{
+      margin-left: 40px;
+      margin-top: 50px;
+      display: flex;
+      
+      & h4{
+        color: white;
+        font-size: 50px;
+        font-weight: 400;
+        margin-top: 270px;
+      }
+      & button{
+        margin-left: -700px;
+        margin-top: 330px;
+        width: 230px;
+        height: 40px;
+        color: white;        
+      }
+    }
+    .menu a{
+      color: white;
+    }
+    .menu a:hover{color: orangered;}
+    .gamb button:hover{
+      background-color: orangered;
+    }
+    /* .pengembang img:hover{
+      background-color: orangered;
+      border-radius: 50px;
+    } */
+    #about{
+      justify-content: center;
+    }
+    footer{
+      background-color:black;
+      color: white;
+      .slogan{
+        margin-top: -20px;
+        margin-bottom: 50px;
+      }
+      .info{
+        color: white;
+        justify-content: center;
+        display: flex;
+        margin-left: 15px;
+            & h4{
+              margin: 70px;
+              margin-top: -10px;
+            }
+      }
+      .isi{
+        margin-left: -250px;
+      }
+      .pengembang{
+        display: flex;
+        justify-content: right;
+        margin-top: -40px;
+        margin-right: 420px;
+         img{
+          margin: 2px;
+        }
+      }
+    }
+</style>
+<section class="landing">
+    <div class="menu">
+        <h6><a href="#about"  style="text-decoration: none; font-size: medium; font-weight: 300; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: large;">About</a></h6>
+        <h6><a href="#produk"  style="text-decoration: none;  font-size: medium; font-weight: 300; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: large ">Shop</a></h6>
+        <h6><a href="login.html" style="text-decoration: none;  font-size: medium; font-weight: 300; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: large ">Login</a></h6>
+    </div>
+    
+    <div class="gamb">
+        <img src="https://images.pexels.com/photos/786003/pexels-photo-786003.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" srcset="" width="730px" height="700px">
+        <h4>Fuel Your Passion, Own the Game.</h4>
+        <button type="button" class="btn btn-dark"><a href="#produk" style="text-decoration: none; color: white; font-size: medium; font-weight: 300; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: bold; font-size: larger;">Shop Now</a></button>
+    </div>
+</section>
+    <header id="produk">
+    <div class="logo">
+        <img src="../Logo/Preview (5).png" alt="" srcset="">
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" name="Cari" placeholder="Cari Sepatu, Merek" id="">
+        <div class="gambar search">
+            <span class="input-group-text" id="basic-addon2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="29" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+              </span>
+        </div>
+        
+        <!-- <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+          </span>
+        </div> -->
+      </div>
+    <div class="login">
+         <i class="bi bi-person-fill">
+          <a href="login.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+              </svg></a>
+        </i>
+        <h4> 
+            <a href="login.html">Masuk/Daftar</a>
+        </h4>
+    </div>
+    <div class="keranjang">
+        <a href=""><i class="bi bi-bag-dash-fill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-dash-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M6 9.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1z"/>
+              </svg>
+        </i></a>
+    </div>
+    <div class="koleksi">
+        <a href=""><i class="bi bi-heart-fill">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+              </svg>
+        </i></a>
+    </div>
+</header>
+<hr>
+
+ 
+    <div class="slider">
+        <div class="list">
+            <div class="item">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/70ccf49c-b3e2-4f2f-97ec-f6b66dd0242b/JORDAN+SPIZIKE+LOW.png" alt="">
+            </div>
+            <div class="item">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/cd95dd50-647c-4f9a-b232-1ca9ef36200c/AIR+ZOOM+PEGASUS+41+EK.png" alt="">
+            </div>
+            <div class="item">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/52c56310-04af-4c93-92b3-414d2179435c/AIR+JORDAN+LEGACY+312+LOW.png" alt="">
+            </div>
+            <div class="item">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2c5fca2b-8444-4de1-8b26-befa5cdca6fb/JORDAN+LUKA+3+PF.png" alt="">
+            </div>
+            <div class="item">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/3ab518ec-e5ce-4e06-8ca4-2efdc8b4c3bb/JORDAN+STADIUM+90.png" alt="">
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><</button>
+            <button id="next">></button>
+        </div>
+        <ul class="dots">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <script src="slider.js"></script>
+
+    <nav id="sidebar">
+        <ul>
+          <li>
+            <span class="logo-side"> <img src="../Logo/Preview (4).png" height="160px" width="130px" alt="" srcset=""></span>
+          </li>
+          <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="M80-140v-320h320v320H80Zm80-80h160v-160H160v160Zm60-340 220-360 220 360H220Zm142-80h156l-78-126-78 126ZM863-42 757-148q-21 14-45.5 21t-51.5 7q-75 0-127.5-52.5T480-300q0-75 52.5-127.5T660-480q75 0 127.5 52.5T840-300q0 26-7 50.5T813-204L919-98l-56 56ZM660-200q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29ZM320-380Zm120-260Z"/></svg>
+                <span style="font-weight: bold;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Kategori</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
+            </button>
+            <ul class="sub-menu">
+              <div>
+                <li><a href="">Sepatu Pria</a></li>
+                <li><a href="">Sepatu Wanita</a></li>
+                <li><a href="">Sepatu Anak</a></li>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#black"><path d="M560-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM280-320q-33 0-56.5-23.5T200-400v-320q0-33 23.5-56.5T280-800h560q33 0 56.5 23.5T920-720v320q0 33-23.5 56.5T840-320H280Zm80-80h400q0-33 23.5-56.5T840-480v-160q-33 0-56.5-23.5T760-720H360q0 33-23.5 56.5T280-640v160q33 0 56.5 23.5T360-400Zm440 240H120q-33 0-56.5-23.5T40-240v-440h80v440h680v80ZM280-400v-320 320Z"/></svg>
+                <span style="font-weight: bold;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Harga</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
+            </button>
+            <ul class="sub-menu">
+              <div>
+                <li><a href="#">Rp. 0 - 500.000</a></li>
+                <li><a href="#">Rp. > 750.000</a></li>
+                <li><a href="#">Rp. > 1.000.000</a></li>
+                <li><a href="#">Rp. > 1.500.000</a></li>
+                <li><a href="#">Rp. > 2.000.000</a></li>
+              </div>
+            </ul>
+          </li>
+          <li>
+            <button onclick=toggleSubMenu(this) class="dropdown-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M520-640v-160q0-17 11.5-28.5T560-840h240q17 0 28.5 11.5T840-800v160q0 17-11.5 28.5T800-600H560q-17 0-28.5-11.5T520-640ZM120-480v-320q0-17 11.5-28.5T160-840h240q17 0 28.5 11.5T440-800v320q0 17-11.5 28.5T400-440H160q-17 0-28.5-11.5T120-480Zm400 320v-320q0-17 11.5-28.5T560-520h240q17 0 28.5 11.5T840-480v320q0 17-11.5 28.5T800-120H560q-17 0-28.5-11.5T520-160Zm-400 0v-160q0-17 11.5-28.5T160-360h240q17 0 28.5 11.5T440-320v160q0 17-11.5 28.5T400-120H160q-17 0-28.5-11.5T120-160Zm80-360h160v-240H200v240Zm400 320h160v-240H600v240Zm0-480h160v-80H600v80ZM200-200h160v-80H200v80Zm160-320Zm240-160Zm0 240ZM360-280Z"/></svg>
+              <span style="font-weight: bold;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Merek</span>
+              <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-361q-8 0-15-2.5t-13-8.5L268-556q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-372q-6 6-13 8.5t-15 2.5Z"/></svg>
+            </button>
+            <ul class="sub-menu">
+              <div>
+                <li><a href="#">Nike</a></li>
+                <li><a href="#">Adidas</a></li>
+                <li><a href="#">Puma</a></li>
+                <li><a href="#">Air Jordan</a></li>
+                <li><a href="#">Converse</a></li>
+              </div>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="main p-3">
+            <div class="text-center">
+            <div class="container">
+        <div class="mt-3">
+        <div class="row justify-content-center mb-3 ">
+                <h1>
+                PRODUK
+                </h1>
+        
+        
+        
+        
+                <div class="container px-3">
+                    <div class="row gx-5">
+                      <div class="col">
+                       <div class="p-3 border bg-white">
+                            <h4>Sneakers Air Jordan Original</h4>
+                            <img src="https://img.ncrsport.com/img/storage/small/553558-131-1.jpg?1" width="100px" alt="" srcset="">
+                            <h6 class="sepatu">Sneakers Air Jordan Original</h6>
+                            <h6>Rp. 1.799.000</h6>
+                            <button type="button" class="btn btn-dark"><a href="beli.html" class="beli" style="text-decoration: none; color: white; font-size: medium; font-weight: 300; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Beli Sekarang</a></button>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="p-3 border bg-white">
+                            <h4>Sneakers Air Jordan AJ 1Low SE</h4>
+                            <img src="https://img.ncrsport.com/img/storage/small/DV1309-051-1.jpg" width="100px" alt="" srcset="">
+                            <h6 class="sepatu">Sneakers Air Jordan AJ 1Low SE</h6>
+                            <h6>Rp. 2.020.000</h6>
+                            <button type="button" class="btn btn-dark"><a href="" class="beli" style="text-decoration: none; color: white; font-size: medium; font-weight: 300; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Beli Sekarang</a></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            <div class="container px-3">
+                <div class="row gx-5">
+                  <div class="col">
+                    <div class="p-3 border bg-white">
+                         <h4>Sneakers Puma RS-Fast</h4>
+                         <img src="https://img.ncrsport.com/img/storage/small/38056207-1.jpg" width="100px" alt="" srcset="">
+                         <h6 class="sepatu">Sneakers Puma RS-Fast</h6>
+                         <h6>Rp. 1.799.000</h6>
+                         <button type="button" class="btn btn-dark"><a href="" class="beli" style="text-decoration: none; color: white; font-size: medium; font-weight: 300; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Beli Sekarang</a></button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border bg-white">
+                         <h4>NIKE Initiator</h4>
+                         <img src="https://img.ncrsport.com/img/storage/small/394055-100-1.jpg" width="100px" alt="" srcset="">
+                         <h6 class="sepatu">NIKE Initiator</h6>
+                        <h6>Rp. 1.199.000</h6>
+                        <button type="button" class="btn btn-dark"><a href="" class="beli" style="text-decoration: none; color: white; font-size: medium; font-weight: 300; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Beli Sekarang</a></button>
+                     </div>
+                </div>
+                </div>
+            </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+    <script src="side-script.js"></script>
+</main>
+
+<footer id="about">
+  <div class="main p-3">
+      <div class="text-center">
+      <div class="container">
+  <div class="mt-3">
+  <div class="row justify-content-center mb-3 ">
+
+  <hr>
+  <div class="container mt-3 " style="margin-left: -30px;">
+      <img src="../Logo/Preview (10).png" width="150" height="170" class="foot">
+      <h4 class="slogan">Fuel Your Passion, Own the Game.</h4>
+      <br>
+      <div class="info">
+          <!-- <h4>Layanan</h4> -->
+          <h4>Temukan Kami</h4>
+          <h4>Info Pengembang</h4>
+      </div>
+      <div class="isi">
+          <a href="@777.sport"><img src="../Logo/instagram (2).png" alt="" srcset="" width="34px"></a>
+          <a href="777.Sport"><img src="../Logo/tiktok (1).png" alt="" srcset="" width="34px"></a>
+          <a href="777.Sport"><img src="../Logo/twitter.png" alt="" srcset="" width="34px"></a>
+          <a href="777sport@gmail.com"><img src="../Logo/apple (1).png" alt="" srcset="" width="34px"></a>
+      </div>
+      <div class="pengembang">
+          <a href="https://www.instagram.com/argaoctaramadhan/"><img src="../Logo/instagram (2).png" alt="" srcset="" width="34px"></a>
+          <a href="https://www.tiktok.com/@argaoctaramadhan"><img src="../Logo/tiktok (1).png" alt="" srcset="" width="34px"></a>
+          <a href="argaramadhan477@gmail.com"><img src="../Logo/apple (1).png" alt="" srcset=""width="34px"></a>
+          <a href="https://github.com/ArgaOcta"><img src="../Logo/github (1).png" alt="" width="34px"></a>
+          <a href="https://www.linkedin.com/in/arga-octa-a5213233b/"><img src="../Logo/linkedin.png" alt="" srcset="" width="34px"></a>
+      </div>
+      <!-- <p>Memberikan pengalaman baca yang lebih baik</p> -->
+      <!-- <table class="table table-borderless" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; ">
+          <thead>
+              <th>Layanan</th>
+              <th>Temukan Kami</th>
+              <th>Kontak</th>
+          </thead>
+          <tbody>
+
+          </tbody>
+      </table> -->
+
+  </div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
